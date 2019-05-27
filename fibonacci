@@ -1,0 +1,14 @@
+#python code goes here
+#python version :3 
+my_list=[0]
+a=int(input("enter the first value"))
+b=int(input("enter the second value"))
+for i in range (0,b):
+    c=a+b
+    print(c)
+    a=b
+    b=c
+my_list[0]=c
+print("the value is"+str(my_list[0]))
+         
+ 
