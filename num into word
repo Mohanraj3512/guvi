@@ -1,12 +1,43 @@
 a=int(input("enter the value   "))
-int(b)=a/100000
+b=a/100000
+b=int(b)
+c=a%100000
+
 if(b>=1): 
-   print(b +"laks and ")
-int(c)=b/1000
-if(c>=1):
-   print(c +"thousand and")
-int(d)=c/100
+  print(str(b) +" lakh ")
+
+d=c/1000
+d=int(d)
+e=c%1000
+
 if(d>=1):
-   print(d +"hundred and")
-int(e)=d/10
-    
+ print(str(d) +" thousand and")
+
+f=e/100
+f=int(f)
+g=e%100
+
+if(f>=1):
+  print(str(f) +" hundred and")
+
+h=g/10
+h=int(h)
+
+if(h>89):
+   print("ninty ")
+if(h>79):
+   print("eighty")
+if(h>69):
+   print("seventy")
+if(h>59):
+    print("sisty")
+if(h>49):
+   print("fifty")
+if(h>39):
+   print("fourty")
+if(h>29):
+   print("therty")
+if(h>19):
+   print("twenty")
+if(h==19):
+   print("ninten")
